@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <title>ID Tombola et PASS</title>
+    <style>
+        *,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.bigcontainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  padding: 20px 0 20px 20px;
+}
+
+.flexcontainer {
+  background-image: url(images/fond-invitation.jpg);
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  justify-items: center;
+  width: 95%; /* Ajustement pour les petits écrans */
+  max-width: 600px; /* Largeur maximale pour les grands écrans */
+  margin: auto;
+  padding: 0px 20px;
+  border-radius: 10px;
+  gap: 20px;
+}
+
+.flexcontainer img {
+  max-width: 100%;
+  height: auto;
+}
+
+.invitation {
+  text-align: center;
+  width: 60%;
+  margin: 40px 10px auto;
+}
+.invitation img {
+  width: 100%;
+}
+
+.flexlogotext {
+  display: flex;
+  padding: 30px 40px;
+}
+
+.flexlogotext div {
+  flex-basis: 50%;
+  font-size: 0.9em;
+}
+
+strong {
+  text-transform: uppercase;
+}
+
+.footer-img {
+  margin-top: 5px;
+}
+
+.footer-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  color: #d1850a;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+section p {
+  font-size: 0.8em;
+}
+
+.notice {
+  width: 80%; /* Ajustement pour les petits écrans */
+  max-width: 600px; /* Largeur maximale pour les grands écrans */
+  padding: 20px;
+  margin: auto; /* Centrer sur la page */
+}
+
+.userfull {
+  text-transform: uppercase;
+  color: #ba1628;
+  font-size: 1.5em;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.userfull .numberID {
+  font-size: 2.5em;
+}
+
+.frize {
+  width: 80%;
+  max-width: 500px;
+}
+.frize img {
+  display: block;
+}
+
+/* Media Query pour les petits écrans */
+@media screen and (max-width: 600px) {
+  .bigcontainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 0;
+  }
+
+  .flexcontainer {
+    background-image: url(images/fond-invitation.jpg);
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    justify-items: center;
+    width: 100%; /* Ajustement pour les petits écrans */
+    max-width: 600px; /* Largeur maximale pour les grands écrans */
+    margin: auto;
+    padding: 0px 10px;
+    border-radius: none;
+    gap: 12px;
+  }
+  .notice {
+    width: 100%; /* Plus large pour les très petits écrans */
+    padding: 10px 20px;
+    font-size: 0.6em;
+  }
+  .flexcontainer img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .invitation {
+    text-align: center;
+    width: 80%;
+    margin: 40px 10px auto;
+  }
+
+  .flexlogotext {
+    display: flex;
+    padding: 20px 10px;
+  }
+  .flexlogotext div {
+    font-size: 0.7em;
+  }
+
+  .flexlogotext img {
+    width: 90%;
+  }
+  section p {
+    font-size: 0.7em;
+  }
+
+  .userfull {
+    font-size: 1em;
+  }
+
+  .userfull .numberID {
+    font-size: 2em;
+  }
+  .footer-img img {
+    max-width: 98%;
+    height: auto;
+  }
+
+  .frize {
+    width: 80%;
+  }
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="bigcontainer">
+      <div class="flexcontainer">
+        <div class="invitation">
+            <img src="images/invitation-text.png" alt="invitation">
+        </div>
+        <section class="flexlogotext">
+            <div>
+                <img src="images/logo-dorer.png" alt="logo du stam" />
+            </div>
+            <div>
+                <p>Nous sommes honorés de vous convier à la Cérémonie d’Ouverture du Salon des Téléphones et Applications Mobiles 2ème édition sur le thème : <strong> « jeunesse et employabilité, digitalisation de l’administration, écosystème zlecaf : Piliers de la croissance Africaine »</strong>.</p> <br>
+                <p class="parrainnage">Sous le HAUT PARRAINAGE  et la Présence effective  de son Excellence Monsieur le  Ministre  de la  Promotion de la Jeunesse,  de l’Insertion Professionnelle et du Service Civique, Porte-Parole Adjoint du Gouvernement, la cérémonie se tiendra ce <strong style="color: #ba1628;">Vendredi 17 Novembre 2023, à 9h</strong> ; à la salle Kodjo Ébouclé du Palais de la Culture de Treichville.
+                </p>
+            </div>
+        </section>
+        <section>
+          <h1>PASS VISITEUR ET ID TOMBOLA</h1>
+        </section>
+        <section>
+          <p style="padding: 0 20px;">
+            <strong> Votre identifiant unique pour la tombola</strong> à la deuxième édition du Salon des Téléphones et
+            Applications Mobiles les 17 et 18 Novembre au Palais de la Culture :
+          </p>
+        </section>
+        <section class="userfull">
+          <h2>Lamine obiang hervé</h2>
+          <h2 class="numberID">02480</h2>
+        </section>
+        <div class="frize">
+            <img src="images/frize-dorer.png" alt="">
+        </div>
+      </div>
+        <div class="notice">
+            <p>
+          * Une copie de ce PASS identifiant vous a été transmis par email, vous
+          en aurez besoin lors du tirage au sort de la Tombola pendant le Salon.
+        </p>
+        </div>
+      </section>
+      <div class="footer-img">
+        <img src="images/footer-contacts.jpg" alt="contacts" />
+      </div>
+    </div>
+  </body>
+</html>

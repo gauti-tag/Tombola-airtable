@@ -1,0 +1,7 @@
+{
+    "name": "ngser/stam",
+    "require": {
+        "phpmailer/phpmailer": "^6.8",
+        "spipu/html2pdf": "^5.2"
+    }
+}

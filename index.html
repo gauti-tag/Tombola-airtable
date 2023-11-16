@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Votre Pass Visiteur au STAM 2023</title>
+    <!--META-VIGNETTE-->
+    <meta property="og:title" content="Votre Pass Visiteur et numéro Tombola au STAM 2023" />
+    <meta property="og:description"
+        content="Inscrivez-vous pour visiter et participer à la Tombola du STAM 2023. Gagnez des lots!" />
+    <meta property="og:image" content="https://topdigitalevel.site/stam2023/webPassID/images/tombolaStam23.jpg" />
+    <!--META-VIGNETTE-->
+</head>
+
+<body>
+    <div id="loading-overlay">
+        <div id="loading-spinner"></div>
+        <p>Loading...</p>
+    </div>
+    <div class="bigContainer">
+        <section class="banner">
+            <img src="images/banniere-tombola.jpg" alt="bannière tombola stam 2023" />
+        </section>
+        <section class="banner1">
+            <img src="images/banniere-tombola-small.jpg" alt="petite bannière tombola stam 2023" />
+        </section>
+        <section class="pitch">
+            <!-- <h1>PASS VISITEUR</h1> -->
+            <h2>
+                Inscrivez-vous comme visiteur à la deuxième Édition du Salon des
+                Téléphones et Applications Mobiles et Gagnez des lots!
+            </h2>
+        </section>
+        <section>
+            <form action="#" method="post" id="pass-stam23">
+                <div class="identification">
+                    <label for="name">Nom & Prénoms</label> <br />
+                    <input type="text" id="name" name="name" autocomplete="name" required />
+                    <br />
+                    <br />
+                    <label for="genre">Sexe</label>
+                    <br />
+                    <input type="radio" id="genre0" name="genre" value="Masculin" style="margin-right: 10px" />Masculin
+                    <br />
+                    <input type="radio" id="genre1" name="genre" value="Féminin" style="margin-right: 10px" />Féminin
+                    <br />
+                    <input type="radio" id="genre2" name="genre" value="Autre" style="margin-right: 10px" />Autre
+                    <br />
+                    <br />
+
+                    <label for="email">Adresse email</label> <br />
+                    <input type="email" id="email" name="email" autocomplete="email" required />
+                    <br />
+                    <br />
+                    <label for="phone">Téléphone</label> <br />
+                    <input type="tel" id="phone" name="phone" autocomplete="tel" required />
+                    <br />
+                    <br />
+                    <label for="cityDistrict">Ville et Quartier</label> <br />
+                    <input type="text" id="cityDistrict" name="cityDistrict" required />
+                    <br />
+                    <br />
+                    <label for="learningDays">Voulez-vous profiter des séances de formation pendant le STAM
+                        2023 ?</label>
+                    <br />
+                    <input type="radio" id="oui" name="learningDays" value="Oui" style="margin-right: 10px" />Oui
+                    <br />
+                    <input type="radio" id="non" name="learningDays" value="Non" style="margin-right: 10px" />Non
+                    <br />
+                </div>
+                <fieldset id="fieldsetLearning" disabled>
+                    <label for="learning[]">Choisir les Masterclass auxquels je veux assister pendant le
+                        Salon :</label>
+                    <br />
+                    <input type="checkbox" name="learning[]" id="learning0"
+                        value="MasterClass: Démonstration de téléphones & d’applis par les fabricants" />
+                    MasterClass: Démonstration de téléphones & d’applis par les
+                    fabricants
+                    <br />
+                    <input type="checkbox" name="learning" id="learning1"
+                        value="MasterClass: Intelligence Artificielle, Outils et états des lieux" />
+                    MasterClass: Intelligence Artificielle, Outils et états des lieux
+                    <br />
+                    <input type="checkbox" name="learning" id="learning2" value="MasterClass: Crypto et Blockchaine" />
+                    MasterClass: Crypto et Blockchaine
+                    <br />
+                    <input type="checkbox" name="learning" id="learning3" value="MasterClass: Rencontre JOB DATING" />
+                    MasterClass: Rencontre JOB DATING
+                    <br />
+                    <input type="checkbox" name="learning" id="learning4"
+                        value="MasterClass: Comment transformer votre appli en une société" />
+                    MasterClass: Comment transformer votre appli en une société
+                    <br />
+                    <input type="checkbox" name="learning" id="learning5"
+                        value="MasterClass: À la découverte de la guerre des semi-conducteurs & micro-processeur" />
+                    MasterClass: À la découverte de la guerre des semi-conducteurs &
+                    micro-processeur
+                </fieldset>
+                <input type="hidden" name="get_learning" id="get_learning" />
+                <input type="hidden" name="ticket_number" id="ticket_number" />
+                <br />
+                <br />
+
+                <button type="submit" style="margin: auto">
+                    Télécharger mon Pass
+                </button>
+            </form>
+        </section>
+        <div class="modal">
+            <div class="modal-content">
+                <span class="modal-close-btn">&times;</span>
+                <p id="modal-message"></p>
+                <button id="modal-ok-btn">OK</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
